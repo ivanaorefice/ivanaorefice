@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="it.polito.mad.project.fragments.authentication.SignInFragment"
+        android:label="@string/menu_home">
+        <action
+            android:id="@+id/action_navHome_to_showProfileFragment"
+            app:destination="@id/showProfileFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit">
+            <argument android:name="UserId" />
+            <argument
+                android:name="IsAuthUser"
+                android:defaultValue="true" />
+        </action>
+        <action
+            android:id="@+id/action_navHome_to_itemListFragment"
+            app:destination="@id/itemListFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_navHome_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_navHome_to_onSaleListFragment"
+            app:destination="@id/onSaleListFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_navHome_to_showItemFragment"
+            app:destination="@id/showItemFragment" />
+        <action
+            android:id="@+id/action_navHome_to_itemsOfInterestListFragment"
+            app:destination="@id/itemsOfInterestListFragment" />
+        <action
+            android:id="@+id/action_navHome_to_boughtItemsListFragment"
+            app:destination="@id/boughtItemsListFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/showProfileFragment"
+        android:name="it.polito.mad.project.fragments.profile.UserDetailsFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_show_profile" >
+        <action
+            android:id="@+id/action_showProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <argument android:name="UserId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="IsAuthUser"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.ItemListFragment"
+        android:label="@string/menu_advertisements"
+        tools:layout="@layout/fragment_item_list">
+        <action
+            android:id="@+id/action_itemListFragment_to_showItemFragment"
+            app:destination="@id/showItemFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit">
+            <argument
+                android:name="IsMyItem"
+                android:defaultValue="true" />
+        </action>
+        <action
+            android:id="@+id/action_itemListFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/showItemFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.ItemDetailsFragment"
+        android:label="@string/menu_show_advertisement"
+        tools:layout="@layout/fragment_item_details">
+        <action
+            android:id="@+id/action_showItemFragment_to_itemEditFragment"
+            app:destination="@id/itemEditFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <argument
+            android:name="ItemId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="IsMyItem"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_showItemFragment_to_usersInterestedFragment"
+            app:destination="@id/usersInterestedFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_itemDetails_to_showRoute"
+            app:destination="@+id/showRouteItemUserFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"/>
+        <argument
+            android:name="IsSoldItem"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_showItemFragment_to_showProfileFragment"
+            app:destination="@id/showProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemEditFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.ItemEditFragment"
+        android:label="@string/menu_edit_advertisement"
+        tools:layout="@layout/fragment_item_edit">
+
+        <argument
+            android:name="ItemId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_itemEditFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="it.polito.mad.project.fragments.profile.UserEditFragment"
+        android:label="@string/menu_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="it.polito.mad.project.fragments.authentication.SignUpFragment"
+        android:label="Sign Up" />
+
+    <fragment
+        android:id="@+id/onSaleListFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.OnSaleListFragment"
+        android:label="@string/menu_on_sale" >
+        <action
+            android:id="@+id/action_onSaleListFragment_to_showItemFragment"
+            app:destination="@id/showItemFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit">
+            <argument
+                android:name="IsMyItem"
+                android:defaultValue="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/usersInterestedFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.UsersInterestedFragment"
+        android:label="Interested users"
+        tools:layout="@layout/fragment_users_interested" >
+        <action
+            android:id="@+id/action_usersInterestedFragment_to_showProfileFragment"
+            app:destination="@id/showProfileFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_usersInterestedFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsOfInterestListFragment"
+        android:name="it.polito.mad.project.fragments.profile.ItemsOfInterestListFragment"
+        android:label="@string/items_of_interest_list"
+        tools:layout="@layout/fragment_items_of_interest" >
+        <action
+            android:id="@+id/action_itemsOfInterestListFragment_to_showItemFragment"
+            app:destination="@id/showItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boughtItemsListFragment"
+        android:name="it.polito.mad.project.fragments.profile.BoughtItemsListFragment"
+        android:label="@string/bought_items_list"
+        tools:layout="@layout/fragment_bought_items_list">
+        <action
+            android:id="@+id/action_boughtItemsListFragment_to_showItemFragment"
+            app:destination="@id/showItemFragment" />
+        <action
+            android:id="@+id/action_boughtItemsListFragment_to_itemReviewFragment"
+            app:destination="@id/itemReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemReviewFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.ItemReviewFragment"
+        android:label="Review an Item" />
+    <fragment
+        android:id="@+id/showRouteItemUserFragment"
+        android:name="it.polito.mad.project.fragments.advertisements.ShowRouteItemUserFragment"
+        android:label="@string/show_route" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="it.polito.mad.project.fragments.MapFragment"
+        android:label="Location in Map" />
+</navigation>

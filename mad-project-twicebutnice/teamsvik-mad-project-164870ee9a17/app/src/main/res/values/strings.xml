@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Twice But Nice</string>
+    <string name="app_store_file_name">it.polito.mad.project.StoreFile</string>
+    <string name="title_activity_main">Twice But Nice</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation Header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile Details</string>
+    <string name="profile">Profile</string>
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="menu_on_sale">On Sale</string>
+    <string name="menu_advertisements">My Advertisements</string>
+    <string name="menu_show_advertisement">Item Details</string>
+    <string name="menu_edit_advertisement">Edit Item</string>
+    <string name="items_of_interest_list">Interested Items</string>
+    <string name="bought_items_list">Bought Items</string>
+    <string name="show_route">Route from User to Item</string>
+
+    <string name="category_def">Category</string>
+    <string name="subcategory_def">Subcategory</string>
+    <string name="status_def">Subcategory</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Hint</string>
+    <string name="param_def">Parameters</string>
+
+    <string-array name="item_filters">
+        <item>Title</item>
+        <item>Category</item>
+        <item>Subcategory</item>
+        <item>Location</item>
+        <item>Description</item>
+        <item>Price</item>
+    </string-array>
+
+    <string name="no_users_interested">No users interested</string>
+    <string name="no_items_interested">No interested items</string>
+    <string name="no_bough_items">No bought items</string>
+    <string name="no_items_found">No items found</string>
+    <string name="mad_message_title">Twice but nice</string>
+    <string name="default_notification_channel_id">mad_default_channel_id</string>
+    <string name="user_name">Full name</string>
+    <string name="location">Location</string>
+    <string name="full_name">Full name</string>
+    <string name="Nickname">NickName</string>
+    <string name="Unknown">Unknown</string>
+    <string name="user_photo">user photo</string>
+
+    <string-array name="item_status">
+        <item>Available</item>
+        <item>Sold</item>
+        <item>Blocked</item>
+    </string-array>
+
+    <string-array name="item_status_partial">
+        <item>Available</item>
+        <item>Blocked</item>
+    </string-array>
+
+    <string-array name="item_categories">
+        <item>Arts &amp; Crafts</item>
+        <item>Sports &amp; Hobby</item>
+        <item>Baby</item>
+        <item>Women\'s fashion</item>
+        <item>Men\'s fashion</item>
+        <item>Electronics</item>
+        <item>Games &amp; Videogames</item>
+        <item>Automotive</item>
+    </string-array>
+
+    <string-array name="item_sub_art">
+        <item>Painting, Drawing &amp; Art Supplies</item>
+        <item>Sewing</item>
+        <item>Scrapbooking &amp; Stamping</item>
+        <item>Party Decorations &amp; Supplies</item>
+    </string-array>
+
+    <string-array name="item_sub_sports">
+        <item>Sports and Outdoors</item>
+        <item>Outdoor Recreation</item>
+        <item>Sports &amp; Fitness</item>
+        <item>Pet Supplies</item>
+    </string-array>
+
+    <string-array name="item_sub_baby">
+        <item>Apparel &amp; Accessories</item>
+        <item>Baby &amp; Toddler Toys</item>
+        <item>Car Seats &amp; Accessories</item>
+        <item>Pregnancy &amp; Maternity</item>
+        <item>Strollers &amp; Accessories</item>
+    </string-array>
+
+    <string-array name="item_sub_women">
+        <item>Clothing</item>
+        <item>Shoes</item>
+        <item>Watches</item>
+        <item>Handbags</item>
+        <item>Accessories</item>
+    </string-array>
+
+    <string-array name="item_sub_men">
+        <item>Clothing</item>
+        <item>Shoes</item>
+        <item>Watches</item>
+        <item>Accessories</item>
+    </string-array>
+
+    <string-array name="item_sub_electo">
+        <item>Computers</item>
+        <item>Monitors</item>
+        <item>Printers &amp; Scanners</item>
+        <item>Camera &amp; Photo</item>
+        <item>Smartphone &amp; Tablet</item>
+        <item>Audio</item>
+        <item>Television &amp; Video</item>
+        <item>Video Game Consoles</item>
+        <item>Wearable Technology</item>
+        <item>Accessories &amp; Supplies</item>
+        <item>Irons &amp; Steamers</item>
+        <item>Vacuums &amp; Floor Care</item>
+    </string-array>
+
+    <string-array name="item_sub_games">
+        <item>Action Figures &amp; Statues</item>
+        <item>Arts &amp; Crafts</item>
+        <item>Building Toys</item>
+        <item>Dolls &amp; Accessories</item>
+        <item>Kids\' Electronics</item>
+        <item>Learning &amp; Education</item>
+        <item>Tricycles, Scooters &amp; Wagons</item>
+        <item>Videogames</item>
+    </string-array>
+
+    <string-array name="item_sub_auto">
+        <item>Car Electronics &amp; Accessories</item>
+        <item>Accessories</item>
+        <item>Motorcycle &amp; Powersports</item>
+        <item>Replacement Parts</item>
+        <item>RV Parts &amp; Accessories</item>
+        <item>Tools &amp; Equipment</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
