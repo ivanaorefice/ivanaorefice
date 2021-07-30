@@ -1,0 +1,33 @@
+GET  http://localhost:3001/api/memes
+
+###
+
+POST http://localhost:3001/api/memes
+Content-Type: application/json
+
+{"title": "title_meme", "img_id": 1, "sentence1": "sentence1", "sentence2": "sentence2", "sentence3": "sentence3", "visibility":"Public", "creator_id": 1}
+
+### 
+
+POST http://localhost:3001/api/copyMemes
+
+Content-Type: application/json
+
+{"title": "title_meme", "img_id": 1, "sentence1": "sentence1", "sentence2": "sentence2", "sentence3": "sentence3", "visibility":"Public", "creator_id": 1}
+
+###
+
+GET http://localhost:3001/api/filteredMemes/public
+
+###
+
+POST http://localhost:3001/api/signup
+
+{"email":"irene@irene.it", "password":"irenuccia", "name":"irene"}
+
+###
+
+PUT http://localhost:3001/api/updateMeme/1
+Content-Type: application/json
+
+{ "title": "prova cambio titolo", "sentence1":"prova cambio", "sentence2":"prova cambio 2", "sentence3":"prova cambio 3" }
