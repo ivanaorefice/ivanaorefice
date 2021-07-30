@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/voice/vendor/grpc/grpc" />
+      <path value="$PROJECT_DIR$/voice/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/voice/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/voice/vendor/composer" />
+      <path value="$PROJECT_DIR$/voice/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/voice/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/voice/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/voice/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/voice/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/protobuf" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/grpc-gcp" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/gax" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/common-protos" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/cloud-dialogflow" />
+      <path value="$PROJECT_DIR$/voice/vendor/google/auth" />
+    </include_path>
+  </component>
+</project>

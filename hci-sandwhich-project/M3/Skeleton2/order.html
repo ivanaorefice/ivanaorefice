@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SandWHICH? - Skeleton</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+  <link href="css/radio.css" rel="stylesheet">
+  <link href="css/checkbox.css" rel="stylesheet">
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "300px";
+      document.getElementById("main").style.marginLeft = "300px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    function order(){
+      alert("Your Order Has Been Sent");
+      window.open("index.html", "_self");
+    }
+    </script>
+
+</head>
+
+<body  id="page-top">
+    <div id="mySidebar" class="sidebar" style="background-color: white; position: assolute;">
+        <br><br>
+        <a href="javascript:void(0)" class="button" onclick="closeNav()" ><i class="fas fa-times"></i></a>
+        <a href="order.html" class="button">Start Your Order</a>
+        <a href="notifications.html" class="button">Notifications</a>
+        <br><br><br><br><br><br><br><br>
+        <a href="settings.html" class="button">Account Settings</a>
+        <a href="about.html" class="button">About Us</a>
+        <a href="index.html" class="button"><i class="fas fa-home"></i></a>
+      </div>
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+          <button type="button" id="mySidebar" class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" 
+          type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            Profile
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+                <div class="dropdown">
+                  <button class="dropbtn"><i class="fas fa-user button"></i></button>
+                  <div class="dropdown-content">
+                    <a href="index.html">User: Mario</a>
+                    <a href="manager.html">Manager</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+    
+          <!-- Masthead Heading -->
+          <h1 class="masthead-heading text-uppercase mb-0">SandWHICH?</h1><br>
+          <p class="masthead-subheading font-weight-light mb-0">Brings together TIME and HUNGER</p><br>
+    
+          <!-- Icon Divider -->
+          <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+          </div>
+    
+          <!-- Masthead Subheading -->
+          <p class="masthead-subheading font-weight-light mb-0">Welcome back, MARIO!</p>
+    
+        </div>
+    </header>
+
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container">
+  
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Start your Order</h2>
+  
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div>
+          <form action="">
+            <br><h5>Bread Type</h5>
+            <label class="containerradio">White Bread
+              <input type="radio" name="radiobread">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Integral Bread
+              <input type="radio" name="radiobread">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">5 Cereals Bread
+              <input type="radio" name="radiobread">
+              <span class="checkmark"></span>
+            </label>
+            
+            <br><h5>Main Ingredient</h5>
+            <label class="containerradio">Ham
+              <input type="radio" name="radiomain">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Speck
+              <input type="radio" name="radiomain">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Hamburger
+              <input type="radio" name="radiomain">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Chicken
+              <input type="radio" name="radiomain">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Tuna
+              <input type="radio" name="radiomain">
+              <span class="checkmark"></span> 
+            </label>
+            
+            <br><h5>Second Ingredient</h5>
+            <h6>You can select a maximum of 3 ingredients</h6>
+            <label class="containerradio">None
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Cheese
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Mozzarella
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Eggplant
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Onion
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Spinach
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Eggs
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Pepperoni
+              <input class="single-checkbox" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <br><h5>Sauce</h5>
+            <label class="containerradio">None
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Mayonnaise
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Tomato
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">BBQ
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Teriaky
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Yougurt
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerradio">Mustard
+              <input type="radio" name="radiosauce">
+              <span class="checkmark"></span>
+            </label>
+
+            <br><h5>Write your Contacts</h5><br>
+            <h6>eMail Address: <input type="text" name="email"><br><br>
+            Phone Number: <input type="text" name="phone"><br></h6>
+
+            <div style="text-align: center;">
+              <br><button type="submit" class="btn btn-primary btn-xl" onclick="order()">Start Your Order</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+  
+          <!-- Footer Location -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Where to find Us</h4>
+            <p class="lead mb-0">Politecnico of Torino
+              <br>Clark, MO 65243</p>
+          </div>
+  
+          <!-- Footer Social Icons -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#">
+              <i class="fab fa-fw fa-dribbble"></i>
+            </a>
+          </div>
+  
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">About SandWHICH?</h4>
+            <p class="lead mb-0">SandWHICH? is an app, licensed and created by
+              <a href="http://polito.it">Politecnico of Torino</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; SandWHICH? Skeleton</small>
+    </div>
+  </section>
+
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+</body>

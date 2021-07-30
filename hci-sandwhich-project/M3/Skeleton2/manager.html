@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SandWHICH? - Skeleton</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "300px";
+      document.getElementById("main").style.marginLeft = "300px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+
+    function change1(){
+        var elem = document.getElementById("myButton1");
+        if (elem.value=="Ready") {
+        elem.value = "Notification Sent";
+        alert("Notification sent");
+        }
+        else {
+        alert("Already sent");
+        }
+    }
+    function change2(){
+        var elem = document.getElementById("myButton2");
+        if (elem.value=="Ready") {
+        elem.value = "Notification Sent";
+        alert("Notification sent");
+        }
+        else {
+        alert("Already sent");
+        }
+    }
+    function change3(){
+        var elem = document.getElementById("myButton3");
+        if (elem.value=="Ready") {
+        elem.value = "Notification Sent";
+        alert("Notification sent");
+        }
+        else {
+        alert("Already sent");
+        }
+    }
+    </script>
+
+</head>
+
+<body  id="page-top">
+    <div id="mySidebar" class="sidebar" style="background-color: white; position: assolute;">
+        <br><br>
+        <a href="javascript:void(0)" class="button" onclick="closeNav()" ><i class="fas fa-times"></i></a>
+        <a href="manager.html" class="button">Current Orders</a>
+        <a href="history.html" class="button">History Orders</a>
+        <br><br><br><br><br><br><br><br>
+        <a href="settingsMan.html" class="button">Account Settings</a>
+        <a href="index.html" class="button"><i class="fas fa-home"></i></a>
+      </div>
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+          <button type="button" id="mySidebar" class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" 
+          type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            Profile
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+                <div class="dropdown">
+                  <button class="dropbtn"><i class="fas fa-user button"></i></button>
+                  <div class="dropdown-content">
+                    <a href="index.html">User: Mario</a>
+                    <a href="manager.html">Manager</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container"><br><br><br>
+    
+          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sandwhich?</h2>
+          <br>
+          <h5 style="text-align: center;">The managerial side</h5>
+          
+          <!-- Icon Divider -->
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+          </div>
+
+          <h6 style="text-align: center;">
+            <div class="pretty p-switch p-slim">
+                <input type="checkbox" checked="checked">
+                <div class="state">
+                    <label>Set vocal commands</label>
+                </div>
+            </div>        
+        </h6><br>
+          <h1 style="text-align: center; cursor: pointer;"><i class="fas fa-microphone"></i></h1>
+
+          <div class="tab-content">
+            <div id="curord" class="container tab-pane active">
+              <br />
+              <h3>Current Orders</h3>
+              <br>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Bread</th>
+                    <th scope="col">Main</th>
+                    <th scope="col">Secondary</th>
+                    <th scope="col">Sauce</th>
+                    <th scope="col">Ready</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="row">
+                    <th>012</th>
+                    <td>White</td>
+                    <td>Tuna</td>
+                    <td>Onion, Eggplant, Cheese</td>
+                    <td>Mayonnaise</td>
+                    <td><input  class='btn btn-success pushme2' onclick="change1()" type="button" value="Ready" id="myButton1"></input></td>
+                  </tr>
+                  <tr id="row">
+                    <th>011</th>
+                    <td>Integral</td>
+                    <td>Ham</td>
+                    <td>Cheese, Spinach, Eggs</td>
+                    <td>Teriaky</td>
+                    <td> <input  class='btn btn-success pushme2' onclick="change2()" type="button" value="Ready" id="myButton2"></input></td>
+                  </tr>
+                  <tr id="row">
+                    <th>009</th>
+                    <td>5 Cereals</td>
+                    <td>Burger</td>
+                    <td>Onion, Cheese</td>
+                    <td>Barbecue</td>
+                    <td> <input  class='btn btn-success pushme2' onclick="change3()" type="button" value="Ready" id="myButton3"></input></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6>Queue Orders: 7</h6>
+            </div>
+
+            <div class="tab-content">
+                <div id="readyord" class="container tab-pane active">
+                  <br />
+                  <h3>Ready Orders</h3>
+                  <br>
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Bread</th>
+                        <th scope="col">Main</th>
+                        <th scope="col">Secondary</th>
+                        <th scope="col">Sauce</th>
+                        <th scope="col">Delivered</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="row">
+                        <th>010</th>
+                        <td>White</td>
+                        <td>Speck</td>
+                        <td>Cheese, Onion</td>
+                        <td>BBQ</td>
+                        <td><input  class='btn btn-success pushme2'type="button" value="Delivered" id="button1"></input></td>
+                      </tr>
+                      <tr id="row">
+                        <th>013</th>
+                        <td>Integral</td>
+                        <td>Ham</td>
+                        <td>Cheese, Spinach</td>
+                        <td>None</td>
+                        <td> <input  class='btn btn-success pushme2' type="button" value="Delivered" id="button2"></input></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+          <div class="row">
+    
+            <!-- Footer Location -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Where to find Us</h4>
+              <p class="lead mb-0">Politecnico of Torino
+                <br>Clark, MO 65243</p>
+            </div>
+    
+            <!-- Footer Social Icons -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <a class="btn btn-outline-light btn-social mx-1" href="#">
+                <i class="fab fa-fw fa-facebook-f"></i>
+              </a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#">
+                <i class="fab fa-fw fa-twitter"></i>
+              </a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#">
+                <i class="fab fa-fw fa-dribbble"></i>
+              </a>
+            </div>
+    
+            <div class="col-lg-4">
+              <h4 class="text-uppercase mb-4">About SandWHICH?</h4>
+              <p class="lead mb-0">SandWHICH? is an app, licensed and created by
+                <a href="http://polito.it">Politecnico of Torino</a>.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; SandWHICH? Skeleton</small>
+    </div>
+  </section>
+
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+</body>
