@@ -13,4 +13,6 @@ The work was carried ot with Android Studio, which allowed to develop directly t
 the implementation of the behaviour of the application, written in Kotlin (see java folder). Finally, we preferred to develop the application in FRAGMENTS, instead of using 
 different activities.
 
+The project has been developed taking advantage of some of Google tools, like Maps (used to display the location in various fragments) and Firebase (used to manage the server-side of the application).
+
 Credits to my team mates. 
