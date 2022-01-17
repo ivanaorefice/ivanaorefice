@@ -2,7 +2,7 @@
 - 👀 I’m interested in Machine Learning, AI, developing Android-native apps (Kotlin), developing Web Apps (React + Javascript)
 - 🌱 I’m currently learning Data Science, in Politecnico di Torino University
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/ivana-orefice-909891166/)
 
 You can find here all of the projects I worked throughout my time in University, both during Bachelor and Master.
 
