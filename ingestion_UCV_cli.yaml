@@ -1,0 +1,30 @@
+source:
+    type: bigquery
+    config:
+        env: TEST
+        include_table_lineage: false
+        include_usage_statistics: false
+        include_tables: true
+        include_views: true
+        profiling:
+            enabled: false
+            profile_table_level_only: false
+        stateful_ingestion:
+            enabled: false
+        credential:
+            project_id: tlp-dlake-dataquality-test
+            private_key: '-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCydZXX3JeKAVRo\nbIvrQRIlcnU9CAWHIStpx3OL1syDzIAYTZGzAPcnamXG1O23oi71ZBTAx33CjFZx\nFMM0qW441S8+ZLQkQiTpfI9fbGrcuIKst0cN1LaAVuMClOqG9AHd9ZGpfM1k8xM3\ncp9jUs8oma9a7qhlLK7No7WE54tXIsKXfnPyQLYk5MRnd19y4bHMZson0ydIlPHg\ntvdhSIWE/XGDRr5Ut3y6vrooCMH/SBeIHPZ3pN0qv1B4Dygsmxfm0tnYz/h9ChDG\ndeMnsJwUY/RJNtvUVmG2jETKQwb3qAoHEb7NkxPeJFpdIHcc5SCa1o77szs7NZFN\n/zrKK4DfAgMBAAECggEAV5L1T+M76CjD46SUuwMJJSA4YRVNJSVFWRjb3l0vqmPR\n3ls+awHHx2tie4KlDw7DDX+p4Xpj//L/PmnKa07TvIb9MpiXgA2HcJ7D+rdI73yJ\n/7jG4QYn8u3wY6VxO32FZwcpjmsknevc28Jfbg3Gg+17DFv+ffvB4j76hjhb/AtL\nYXUVz0rQ9/DoYibImnp8xT2unY9OeaKC0BCQSVQRsbj5DiS7gejkUANH+FKAzIjC\nRsZDCrX8hixRT6R5jYvkEwI+ftrlhgEVVBqBgvVNKRnwQATAbYxY+IHZ/8rIP7CR\nKBKi+iipWsq51qamuSF4JwSG7zBxNZPE98bNGM3zVQKBgQDs1Dq67tsuYCR8RjML\n27ROH3GEzTyluNwpGEumeTn0Oqx65uuF0HGYSoeLOtUYB8eSr9nbz2ks9+/FTCnK\n71wvLa8ZQgIz5QdHGHLL9quPz1st6YO9TPS+IE1SGvMRIKX58cFGQjLJxlrVEuqp\nejHcOxmnymnATgWUFOORQu6tIwKBgQDA58UMRMeXqKcsUCBkiRNHQJoY7DrksE52\nRan8pV1UDRYGU7bhPMCmnf9Ho0bc1+RhK+LqgcMLIxhFX7W0qBgidFaTzQlgwFkE\nQ6/KnagFhTIXxRld6ZtGFsleolzwWwkLh2twcFCTfTnL5pT6mYpo5Rh44lHxSuzr\n0m3MnIjPFQKBgEQSGDNktiEVR0dlEgUFiESwKvvF1fm4MaeqMQxPacX2G19UAjw7\nFnt0aJMvPNKkYcuaud7BNfTT6tnls1l+BRwWYG69F079NGNN9qkDZHp4WjfPF6uQ\ndAQ12qOP1W+F188Imsnr+xcd6Tu3LTW7RpuLbStaNZ0tj9LpUiONfnbLAoGBAKPs\nj/LUA7Ppml26nTwxi5NR32DsZUNuWs6Admn97+f70sp/mvmd0awEuSicJByIzUaR\nr5tNt3ugUACry1IAQboNmICyjJSN/1bzWc/Y1y4RuLagQ+UdHVibBnWHjWimQ3Jr\nmi4LEz2x/Uo64EBv90EZ5QjccXuVCu1+fNWR82PdAoGBAIjNwFbl+pi0mjlC4U1t\nquVTmbf/XKaoWEIFH+b0ZGA7YQ+RySLef3cXVkTRJaANRrB3Gm9nHeDy5CZjJQCu\nRQYnJSGeK2tYy9jbEvAE0KItBDHjuH0glteCrkGQpLR5lQCpk6oNjTEl0Z3dIRKT\nIopcFL8zc23wzEbPxdNxi6Gv\n-----END PRIVATE KEY-----\n'
+            private_key_id: ce0ec01716b86e23d3cbc9e16adced647f45fc92
+            client_email: datahub-bigquery-sa@tlp-dlake-dataquality-test.iam.gserviceaccount.com
+            client_id: '111928866366643539131'
+        project_id_pattern:
+            allow:
+                - tlp-dataplatform-test
+        dataset_pattern:
+            allow:
+                - tlp-dataplatform-test.published_kpi
+            deny: []
+        table_pattern:
+            allow:
+                - tlp-dataplatform-test.published_kpi.UCV
+            deny: []
